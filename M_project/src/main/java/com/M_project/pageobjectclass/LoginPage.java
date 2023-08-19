@@ -1,0 +1,51 @@
+
+package com.M_project.pageobjectclass;
+
+import java.time.Duration;
+
+import javax.lang.model.element.Element;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.auto.common.Visibility;
+
+public class LoginPage {
+	
+	WebDriver Ldriver;
+	
+    @FindBy(xpath="//input[@name='uid']")
+    WebElement UserId;
+    
+    @FindBy(xpath = "//input[@name='password']")
+    WebElement Password;
+    
+    
+    @FindBy(xpath="//input[@name='btnLogin']")
+    WebElement Login;
+    
+    @FindBy(xpath="//input[name='btnReset']")
+    WebElement Reset;
+    
+    public LoginPage(WebDriver rdriver) {
+    	Ldriver=rdriver;
+    	PageFactory.initElements(rdriver,this);
+    }
+
+   public void setUserName(String name) {
+	   UserId.sendKeys(name);
+   }
+   public void setPassword(String pass) {
+	   Password.sendKeys(pass); 
+   }
+   public void clickLogin() {
+	   Login.click();
+	   
+   }
+  // public void clickReset() {
+	//   Reset.click();
+   
+}

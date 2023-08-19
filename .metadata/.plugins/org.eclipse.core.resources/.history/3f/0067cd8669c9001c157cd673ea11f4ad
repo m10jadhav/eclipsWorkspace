@@ -1,0 +1,24 @@
+//parameterized method
+
+package java_package;
+
+public class java_class
+{
+	public void area()
+	{
+		int i;
+		int j;
+		i=10;
+		j=20;
+		System.out.print("area of triangle=");
+		int a;
+		a=i*j/2;
+		System.out.println(a);
+		}
+	
+    public static void main (String[]args)
+    {
+    	java_class ref= new java_class();
+    	ref.area();
+    }
+}

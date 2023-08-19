@@ -1,0 +1,27 @@
+package com.bankingproject.testclass;
+
+import org.testng.annotations.Test;
+
+import com.bankingproject.PageObjectClass.BaseClass;
+import com.bankingproject.PageObjectClass.LoginPage;
+
+public class TC_001_loginTest extends BaseClass
+{
+	@Test
+	public void loginTest() {
+		LoginPage login=new LoginPage(driver);
+		login.setUserName("mngr424138");
+		login.setPassward("EbynuzA");
+		login.clickLoginButton();
+		
+		String Title="GPTL Bank Home Page";
+		
+		if(driver.getTitle().equals(Title)) {
+			System.out.println("correct page");
+		}else
+		{
+			System.out.println("incorrect page");
+		}
+	}
+
+}

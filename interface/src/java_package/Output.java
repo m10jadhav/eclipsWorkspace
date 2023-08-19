@@ -1,0 +1,24 @@
+//multiple inheritance by using interface
+
+
+package java_package;
+
+public class Output implements New,New1
+{
+	public void star()
+	{
+		System.out.println("  * ");
+		System.out.println(" * * ");
+		System.out.println("* * *");
+		
+	}
+	
+	
+	
+	public static void main (String[]agrs)
+	{
+		Output ref = new Output();
+		ref.star();
+	}
+   
+}

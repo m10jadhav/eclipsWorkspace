@@ -1,0 +1,12 @@
+
+//interface
+
+
+package java_package;
+
+public interface java_class 
+{
+ public abstract void equation1();   //incomplete methods
+ public abstract void equation2();
+ public abstract void equation3();
+}

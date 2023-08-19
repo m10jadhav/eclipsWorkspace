@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="M_Project">
+
+	<test name="Bankingtest">
+            <parameter name="Browser"  value="chrome"/>
+		<classes>
+			<class name="com.M_project.testclass.TC_001_loginPage"/>
+		</classes>
+	</test>
+</suite>

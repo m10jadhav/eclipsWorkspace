@@ -1,0 +1,28 @@
+
+    //inheritance 
+
+
+
+package java_package;
+
+public class java_class 
+{
+	public void sum()
+	{
+	
+	int a=10;
+	System.out.println(a);
+	int b=20;
+	System.out.println(b);
+	
+	}
+	
+	public static void main(String[]args)
+	{
+		
+	java_class ref=new java_class();
+	ref.sum();
+	
+	
+	}
+}
