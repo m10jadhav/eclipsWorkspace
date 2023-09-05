@@ -1,4 +1,4 @@
-//palidrom number
+//palidrom number=if we reverse any string or any number if string and number remains same then it is palidrom string or palidrome number
 
 package java_package;
 

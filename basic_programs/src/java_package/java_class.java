@@ -17,8 +17,8 @@ public class java_class
 		   rs=rs+s.charAt(i);
 	   }
 	   
-	   System.out.println("Original String=  "+""+s);
-	   System.out.println("Reverse String=  "+""+rs);
+	   System.out.println("Original String="+""+ s);
+	   System.out.println("Reverse String="+""+ rs);
 	   
    }
 }
